@@ -1,0 +1,5 @@
+[init]
+	defaultBranch = docker-compose.yml
+[user]
+	name = whiskkysbueno
+	email = companybueno@gmail.com

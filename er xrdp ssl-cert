@@ -1,0 +1,24 @@
+[0;1;32m●[0m xrdp.service - xrdp daemon
+     Loaded: loaded (/lib/systemd/system/xrdp.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Fri 2024-06-28 06:30:37 UTC; 32s ago
+       Docs: man:xrdp(8)
+             man:xrdp.ini(5)
+    Process: 30528 ExecStartPre=/bin/sh /usr/share/xrdp/socksetup (code=exited, status=0/SUCCESS)
+    Process: 30536 ExecStart=/usr/sbin/xrdp $XRDP_OPTIONS (code=exited, status=0/SUCCESS)
+   Main PID: 30537 (xrdp)
+      Tasks: 1 (limit: 2323)
+     Memory: 868.0K
+        CPU: 15ms
+     CGroup: /system.slice/xrdp.service
+             └─30537 /usr/sbin/xrdp
+
+Jun 28 06:30:36 typebot systemd[1]: Starting xrdp daemon...
+Jun 28 06:30:36 typebot xrdp[30536]: [INFO ] address [0.0.0.0] port [3389] mode 1
+Jun 28 06:30:36 typebot xrdp[30536]: [INFO ] listening to port 3389 on 0.0.0.0
+Jun 28 06:30:36 typebot xrdp[30536]: [INFO ] xrdp_listen_pp done
+Jun 28 06:30:36 typebot systemd[1]: xrdp.service: Can't open PID file /run/xrdp/xrdp.pid (yet?) after start: Operation not permitted
+Jun 28 06:30:37 typebot systemd[1]: Started xrdp daemon.
+Jun 28 06:30:38 typebot xrdp[30537]: [INFO ] starting xrdp with pid 30537
+Jun 28 06:30:38 typebot xrdp[30537]: [INFO ] address [0.0.0.0] port [3389] mode 1
+Jun 28 06:30:38 typebot xrdp[30537]: [INFO ] listening to port 3389 on 0.0.0.0
+Jun 28 06:30:38 typebot xrdp[30537]: [INFO ] xrdp_listen_pp done
